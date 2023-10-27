@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Container, ProfileDescription, SecondaryDescription, DescriptionItems, Image, Name, Stats, } from "./Profile.styled"
+import { Container, ProfileDescription, SecondaryDescription, DescriptionItems, Image, Name, Stats, StatsList, Label} from "./Profile.styled"
 
 
 export function Profile({ username, tag, location, avatar, stats }) {
@@ -17,18 +17,18 @@ export function Profile({ username, tag, location, avatar, stats }) {
       
         
       <Stats className="stats">
-        <li>
-          <span className="label">Followers: </span>
+        <StatsList>
+          <Label className="label">Followers: </Label>
           <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views: </span>
+        </StatsList>
+        <StatsList>
+          <Label className="label">Views: </Label>
           <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes: </span>
+        </StatsList>
+        <StatsList>
+          <Label className="label">Likes: </Label>
           <span className="quantity">{stats.likes}</span>
-        </li>
+        </StatsList>
       </Stats>
     </Container>
   );
