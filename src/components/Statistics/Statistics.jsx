@@ -1,20 +1,22 @@
 import PropTypes from "prop-types";
 import data from "components/Statistics/data.json";
+import { SecondaryTitle, SectionStat, StatsList, StatsItem, Label} from "./Statistics.styled"
+
 
 export function Statistics() {
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+    <SectionStat className="statistics">
+      <SecondaryTitle className="title">Upload stats</SecondaryTitle>
 
-      <ul className="stat-list">
+      <StatsList className="stat-list">
         {data.map(({ id, label, percentage }) => (
-          <li className="item" key={id}>
-            <span className="label">{label}</span>
+          <StatsItem className="item" key={id}>
+            <Label className="label">{label}</Label>
             <span className="percentage">{percentage}%</span>
-          </li>
+          </StatsItem>
         ))}
-      </ul>
-    </section>
+      </StatsList>
+    </SectionStat>
   );
 }
 

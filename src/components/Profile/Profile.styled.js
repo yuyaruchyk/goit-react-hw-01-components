@@ -39,6 +39,7 @@ export const Name = styled.p`
   font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
+  text-shadow: 0 1px 1px #2D2020;
 `;
 
 export const Stats = styled.ul`
@@ -69,6 +70,7 @@ export const StatsList = styled.li`
 `;
 
 export const Label = styled.span`
+text-shadow: 0 1px 1px #2D2020;
  font-size: 24px;
   font-weight: 600;
   text-transform: capitalize;
