@@ -46,6 +46,7 @@ export const StatsItem = styled.li`
   justify-content: center;
   gap: 16px;
   border-right: solid 0.6px gray;
+   border-left: solid 0.6px gray;
 
   padding-right: 20px;
   padding-left: 20px;
