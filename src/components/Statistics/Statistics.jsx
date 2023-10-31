@@ -3,16 +3,15 @@ import data from "components/Statistics/data.json";
 import { SecondaryTitle, SectionStat, StatsList, StatsItem, Label} from "./Statistics.styled"
 
 
-export function Statistics() {
+export function Statistics({ title, stats }) {
   return (
     <SectionStat className="statistics">
-      <SecondaryTitle className="title">Upload stats</SecondaryTitle>
-
-      <StatsList className="stat-list">
-        {data.map(({ id, label, percentage }) => (
-          <StatsItem className="item" key={id}>
-            <Label className="label">{label}</Label>
-            <span className="percentage">{percentage}%</span>
+      {title && <SecondaryTitle>{title}</SecondaryTitle>}
+      <StatsList>
+        {stats.map(({ id, label, percentage }) => (
+          <StatsItem key={id}>
+            <Label>{label}</Label>
+            <span>{percentage}%</span>
           </StatsItem>
         ))}
       </StatsList>

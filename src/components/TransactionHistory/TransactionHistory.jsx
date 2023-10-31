@@ -5,7 +5,7 @@ import {Table, TableItem, TableTd  } from "./Transaction.styled"
 
 export function TransactionHistory({ transactions }) {
   return (
-    <Table className="transaction-history">
+    <Table>
       <thead>
         <tr>
           <TableItem>Type</TableItem>

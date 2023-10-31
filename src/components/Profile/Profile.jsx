@@ -5,29 +5,29 @@ import { Container, ProfileDescription, SecondaryDescription, DescriptionItems, 
 export function Profile({ username, tag, location, avatar, stats }) {
   return (
     <Container>
-      <ProfileDescription className="description">
+      <ProfileDescription>
         <Image src={avatar} alt="User avatar" />
         <SecondaryDescription> <Name>{username}</Name>
         <DescriptionItems> <p>{'@' + tag}</p>
-        <p className="location">{location}</p></DescriptionItems>
+        <p>{location}</p></DescriptionItems>
           
          </SecondaryDescription>
        
       </ProfileDescription>
       
         
-      <Stats className="stats">
+      <Stats>
         <StatsList>
-          <Label className="label">Followers: </Label>
-          <span className="quantity">{stats.followers}</span>
+          <Label>Followers: </Label>
+          <span>{stats.followers}</span>
         </StatsList>
         <StatsList>
-          <Label className="label">Views: </Label>
-          <span className="quantity">{stats.views}</span>
+          <Label>Views: </Label>
+          <span>{stats.views}</span>
         </StatsList>
         <StatsList>
-          <Label className="label">Likes: </Label>
-          <span className="quantity">{stats.likes}</span>
+          <Label>Likes: </Label>
+          <span>{stats.likes}</span>
         </StatsList>
       </Stats>
     </Container>

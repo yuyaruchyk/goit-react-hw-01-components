@@ -4,19 +4,19 @@ import { FriendsList, LiItem, FriendAvatar  } from "./FriendList.styled";
 
 export function FriendList({ friends }) {
   return (
-    <FriendsList className="friend-list">
+    <FriendsList>
       {friends.map(({ id, avatar, isOnline, name }) => (
-        <LiItem key={id} className="item">
+        <LiItem key={id} >
              <div
-            className="status-indicator"
+            
             style={{   backgroundColor: isOnline ? 'green' : 'red',
               width: '12px', 
               height: '12px', 
               borderRadius: '50%', 
               marginRight: '8px', }}
           ></div>
-          <FriendAvatar className="avatar" src={avatar} alt="User avatar" width="38" />
-          <p className="name">{name}</p>
+          <FriendAvatar src={avatar} alt="User avatar" width="38" />
+          <p>{name}</p>
         </LiItem>
       ))}
     </FriendsList>
