@@ -34,12 +34,23 @@ export const LiItem = styled.li`
   justify-content: center;
 `;
 
+const statusColor = (p) => {
+  switch (p.$status) {
+    case true:
+      return 'green';
+    case false:
+      return 'red';
+    default:
+      return 'black';
+  }
+};
+
 export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin-right: 4px;
-  background-color: green;
+  background-color: ${statusColor};
 `;
 
 export const FriendAvatar = styled.img`
