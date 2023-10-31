@@ -46,7 +46,6 @@ export const Stats = styled.ul`
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
-  list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;

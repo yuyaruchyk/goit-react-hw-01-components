@@ -54,7 +54,7 @@ export const Status = styled.span`
 `;
 
 export const FriendAvatar = styled.img`
-  display: block;
+  
   margin-left: auto;
   margin-right: auto;
   width: 38px;
