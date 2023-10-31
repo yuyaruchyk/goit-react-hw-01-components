@@ -9,8 +9,8 @@ import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
 import transactions from "components/TransactionHistory/transactions.json";
 
-import { Global } from '@emotion/react';
-import { globalStyles } from './GlobalStyle';
+import { Global } from '@emotion/react'; 
+import { globalStyles } from './GlobalStyle'; 
 
 
 export const App = () => {
@@ -31,7 +31,7 @@ export const App = () => {
 
      <TransactionHistory transactions={transactions} />
 
-<Global styles={globalStyles} />
+<Global styles={globalStyles} /> 
 
 
     </div>
