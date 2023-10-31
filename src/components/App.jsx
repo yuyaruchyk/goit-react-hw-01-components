@@ -8,7 +8,9 @@ import { FriendList } from "./FriendList/FriendList"
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
 import transactions from "components/TransactionHistory/transactions.json";
-
+import 'modern-normalize';
+import { Global } from '@emotion/react';
+import { globalStyles } from './GlobalStyle';
 
 export const App = () => {
   return (
@@ -28,7 +30,7 @@ export const App = () => {
 
      <TransactionHistory transactions={transactions} />
 
-
+<Global styles={globalStyles} />
 
 
     </div>
