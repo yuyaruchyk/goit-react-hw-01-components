@@ -8,10 +8,10 @@ import { FriendList } from "./FriendList/FriendList"
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
 import transactions from "components/TransactionHistory/transactions.json";
-import 'modern-normalize';
+
 import { Global } from '@emotion/react';
 import { globalStyles } from './GlobalStyle';
-import 'modern-normalize';
+
 
 export const App = () => {
   return (
