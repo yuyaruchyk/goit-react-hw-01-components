@@ -3,7 +3,7 @@ import { SecondaryTitle, SectionStat, StatsList, StatsItem, Label} from "./Stati
 
 export function Statistics({ title, stats }) {
   return (
-    <SectionStat className="statistics">
+    <SectionStat>
       {title && <SecondaryTitle>{title}</SecondaryTitle>}
       <StatsList>
         {stats.map(({ id, label, percentage }) => (
